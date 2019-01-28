@@ -34,6 +34,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post 'posts/:id' do
+    fail
     @post = Post.find(params[:id])
   end
 
