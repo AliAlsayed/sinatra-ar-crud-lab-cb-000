@@ -1,5 +1,5 @@
 <h1>Edit!</h1>
-<form action="/posts" method="POST">
+<form action="/posts/<%= @post.id %>" method="POST">
   <p>Name: <input type="text" name="name"></p>
   <p>Content: <input type="text" name="content"></p>
   <input type="submit" id="submit">
