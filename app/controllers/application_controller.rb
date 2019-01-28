@@ -34,8 +34,8 @@ class ApplicationController < Sinatra::Base
   end
 
   patch 'posts/:id' do
-    #@post = Post.find(params[:id])
-    'hi'
+    fail
+    @post = Post.find(params[:id])
   end
 
 
