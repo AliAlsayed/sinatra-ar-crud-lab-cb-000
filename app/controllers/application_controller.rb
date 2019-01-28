@@ -30,7 +30,7 @@ class ApplicationController < Sinatra::Base
 
   get '/posts/:id/edit' do
     @post = Post.find(params[:id])
-    slim :edit
+    erb :edit
   end
 
 
