@@ -35,6 +35,8 @@ class ApplicationController < Sinatra::Base
   patch 'posts/:id' do
     fail
     @post = Post.find(params[:id])
+    @post.update(params)
+    redirect '/posts/:id'
   end
 
 
